@@ -4,42 +4,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tony| Fullstack Developer</title>
+    <title>Tony | Fullstack Developer</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- Dark/Light Mode Toggle -->
+    <button id="theme-toggle">🌙</button>
+
     <!-- Hero Section -->
     <header class="hero">
+        <div class="profile-pic"></div>
         <h1>Tony</h1>
         <p>Fullstack Developer</p>
-        <p class="tagline">Building scalable healthcare and educational apps with real-world impact.</p>
+        <p class="tagline">Creating innovative, scalable solutions with real-world impact.</p>
         <nav>
             <a href="#projects">Projects</a>
             <a href="#skills">Skills</a>
             <a href="#goals">Goals</a>
             <a href="#contact">Contact</a>
         </nav>
+        <div class="social-icons">
+            <a href="https://github.com/itsaaarrk">GitHub</a>
+            <a href="https://www.facebook.com/xion.uno/">Facebook</a>
+            <a href="#">LinkedIn</a>
+        </div>
     </header>
 
     <!-- Projects Section -->
     <section id="projects">
         <h2>Featured Projects</h2>
         <div class="cards">
-            <div class="card">
-                <h3>Health Management App</h3>
-                <p>Role-based dashboards and analytics for patient and educator engagement.</p>
-                <span class="stack">Angular | Firebase | ASP.NET Core</span>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h3>Health Management App</h3>
+                        <span class="stack">React | Firebase | Node.js</span>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>Role-based dashboards and analytics for patient, doctor, admin, and pharmacist.</p>
+                    </div>
+                </div>
             </div>
-            <div class="card">
-                <h3>Nursing Quiz CMS</h3>
-                <p>Educator onboarding and student quiz flows with analytics tracking.</p>
-                <span class="stack">Angular | Firestore | T-SQL</span>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h3>FETCH-UP</h3>
+                        <span class="stack">Android Studio | Firebase | Java</span>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>School attendance and child-tracking system with real-time parent notifications, QR code
+                            access, and emergency alerts.</p>
+                    </div>
+                </div>
             </div>
-            <div class="card">
-                <h3>Finance Tracker</h3>
-                <p>Subscription-based finance app with monetization experiments.</p>
-                <span class="stack">Angular | ASP.NET Core | SQL</span>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h3>Bayanan-Bayanihan</h3>
+                        <span class="stack">Web App | Community Management</span>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>A web-based barangay management system for Bayanan II, Calapan City. Features include
+                            resident records, 4Ps dashboard, online document requests, grievance handling, audit logs
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h3>Gym Management System</h3>
+                        <span class="stack">.NET | Door Lock Control | Attendance Tracking</span>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>A .NET-based gym management system with smart door lock integration. Captures member
+                            attendance automatically upon entry, provides secure access control, and generates real-time
+                            attendance reports to streamline gym operations.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -47,43 +92,116 @@
     <!-- Skills Section -->
     <section id="skills">
         <h2>Skills & Expertise</h2>
-        <ul>
-            <li>Backend APIs: REST, FHIR, ASP.NET Core</li>
-            <li>Frontend: Angular, role-based routing</li>
-            <li>Database: T-SQL, Firestore</li>
-            <li>UI/UX Flow Design: educator & student journeys</li>
-            <li>Optimization & Monetization: ads, subscriptions, premium unlocks</li>
-        </ul>
+        <div class="skills-grid">
+            <div class="skill-bar">
+                <span>React</span>
+                <div class="bar">
+                    <div class="progress" style="width:80%"></div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <span>Firebase</span>
+                <div class="bar">
+                    <div class="progress" style="width:85%"></div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <span>ASP.NET</span>
+                <div class="bar">
+                    <div class="progress" style="width:80%"></div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <span>Android Studio</span>
+                <div class="bar">
+                    <div class="progress" style="width:67%"></div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <span>Visual Studio Code</span>
+                <div class="bar">
+                    <div class="progress" style="width:75%"></div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <span>C#</span>
+                <div class="bar">
+                    <div class="progress" style="width:78%"></div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <span>Visual Basic</span>
+                <div class="bar">
+                    <div class="progress" style="width:86%"></div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <span>Windows Desktop Application</span>
+                <div class="bar">
+                    <div class="progress" style="width:86%"></div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <span>Java</span>
+                <div class="bar">
+                    <div class="progress" style="width:67%"></div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Goals Section -->
     <section id="goals">
         <h2>Goals & Vision</h2>
-        <h3>Short-Term</h3>
-        <ul>
-            <li>Build differentiated apps (finance, nursing quiz CMS, health management)</li>
-            <li>Onboard educators and validate quiz content</li>
-        </ul>
-        <h3>Long-Term</h3>
-        <ul>
-            <li>Generate sustainable passive income from Play Store apps</li>
-            <li>Build scalable, community-driven platforms</li>
-        </ul>
+        <div class="timeline">
+            <div class="goal short-term">
+                <h3>Short-Term 🚀</h3>
+                <ul>
+                    <li>Develop innovative applications across health, education, and finance domains</li>
+                    <li>Collaborate with educators and professionals to validate and improve content quality</li>
+                    <li>Explore sustainable monetization strategies</li>
+                    <li>Design scalable, community-driven platforms</li>
+                </ul>
+            </div>
+            <div class="goal long-term">
+                <h3>Long-Term 🌍</h3>
+                <ul>
+                    <li>Build scalable platforms with real-world impact</li>
+                    <li>Foster collaborations with developers and industry professionals</li>
+                    <li>Increase professional connections and grow a strong network</li>
+                </ul>
+            </div>
+        </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>Let’s collaborate on healthcare and educational technology.</p>
-        <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
-        <p>GitHub: <a href="https://github.com/itsaaarrk">github.com/itsaaarrk</a></p>
-        <p>LinkedIn: <a href="#">linkedin.com/in/mark</a></p>
-        <p>Play Store: <a href="#">View My Apps</a></p>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+        <div class="social-links">
+            <a href="mailto:mxaidocnv2@gmail.com">Email</a>
+            <a href="https://github.com/itsaaarrk">GitHub</a>
+            <a href="https://www.facebook.com/xion.uno/">Facebook</a>
+        </div>
     </section>
 
     <footer>
-        <p>© 2026 Mark | Built with ❤️ on GitHub Pages</p>
+        <p>© 2026 Tony | Code with clarity, design with purpose, impact with innovation</p>
     </footer>
+
+    <script>
+        // Dark/Light Mode Toggle
+        const toggle = document.getElementById('theme-toggle');
+        toggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            toggle.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+        });
+    </script>
 </body>
 
 </html>
